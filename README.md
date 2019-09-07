@@ -3,31 +3,33 @@
 
 An unofficial driver for communicating with Busylight devices. For more details related to the device, check out the official page here: http://busylight.com/
 
+Some of the other implemenations:
+
+* node
+   1. https://github.com/porsager/busylight
+         
+* python 
+   1. https://github.com/mccarthyryanc/busylight    
+   2. https://github.com/ericpulvino/pyBusylight
+
+
 ----
 The project `busylight-core` is a complete and comprehensive driver implementation of the protocol specification of Busylight for [revision 2.2](docs/Busylight.API.rev.2.2.-.22052015.pdf). The purpose of this module/project is to only act as a driver for communicating with the busylight device. Most common interactions are already covered in the "high-level" api. For custom specification, you can use the `ProtocolSpec#builder`    
 
 The implementation is structured logically into the following ---
-
-## Low-level Api:
-
-*   `ProtocolSpec`
-        
-      TBA
-    
-*   `ProtocolStep`
-    
-    TBA
-    
-*   `*.protocol.bytes.*`
-    
-    TBA
     
 ## High-level Api:
 
-* `SpecConstants`
+* [`SpecConstants`](src/main/java/com/fyayc/essen/busylight/core/protocol/SpecConstants.java)
 
-    TBA
+    Contains most common used specs. For most cases, this should be sufficient. 
     
+## Low-level Api:
+
+*   [`ProtocolSpec`](src/main/java/com/fyayc/essen/busylight/core/protocol/ProtocolSpec.java)
+*   [`ProtocolStep`](src/main/java/com/fyayc/essen/busylight/core/protocol/bytes/)
+*   [`*.protocol.bytes.*`]()
+        
 ## Driver
 The `Driver` class implements the logic to send the raw byte buffer data to the `HidDevice`. Apart from this, the class is also responsible for maintaining a  _stable_ connection to the device. That means, it _observes_ for attachments, and detachment of the device and tries to reestablish the connection. 
 
