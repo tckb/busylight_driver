@@ -107,3 +107,5 @@ try (Driver driver = Driver.tryAndAcquire()) {
       driver.send(spec);
     }
 ```
+---
+Unless, specified otherwise, all parts code in all the branches in this repository is  subjected to [GNU AGPLV3 License](https://github.com/tckb/busylight_driver/blob/master/LICENSE)
