@@ -1,4 +1,9 @@
 # Busylight Driver
+
+
+An unofficial driver for communicating with Busylight devices. For more details related to the device, check out the official page here: http://busylight.com/
+
+----
 The project `busylight-core` is a complete and comprehensive driver implementation of the protocol specification of Busylight for [revision 2.2](docs/Busylight.API.rev.2.2.-.22052015.pdf). The purpose of this module/project is to only act as a driver for communicating with the busylight device. Most common interactions are already covered in the "high-level" api. For custom specification, you can use the `ProtocolSpec#builder`    
 
 The implementation is structured logically into the following ---
