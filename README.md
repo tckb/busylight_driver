@@ -27,8 +27,8 @@ The implementation is structured logically into the following ---
 ## Low-level Api:
 
 *   [`ProtocolSpec`](src/main/java/com/fyayc/essen/busylight/core/protocol/ProtocolSpec.java)
-*   [`ProtocolStep`](src/main/java/com/fyayc/essen/busylight/core/protocol/bytes/)
-*   [`*.protocol.bytes.*`]()
+*   [`ProtocolStep`](src/main/java/com/fyayc/essen/busylight/core/protocol/ProtocolStep.java)
+*   [`*.protocol.bytes.*`](src/main/java/com/fyayc/essen/busylight/core/protocol/bytes/)
         
 ## Driver
 The `Driver` class implements the logic to send the raw byte buffer data to the `HidDevice`. Apart from this, the class is also responsible for maintaining a  _stable_ connection to the device. That means, it _observes_ for attachments, and detachment of the device and tries to reestablish the connection. 
