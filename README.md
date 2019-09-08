@@ -13,6 +13,13 @@ Some of the other implemenations:
    2. https://github.com/ericpulvino/pyBusylight
 
 
+## Build and Install
+You can install the package in your local maven repo as follows:
+
+```bash
+$ cd busylight_driver
+$ mvn clean install
+```
 ----
 The project `busylight-core` is a complete and comprehensive driver implementation of the protocol specification of Busylight for [revision 2.2](docs/Busylight.API.rev.2.2.-.22052015.pdf). The purpose of this module/project is to only act as a driver for communicating with the busylight device. Most common interactions are already covered in the "high-level" api. For custom specification, you can use the `ProtocolSpec#builder`    
 
@@ -107,5 +114,7 @@ try (Driver driver = Driver.tryAndAcquire()) {
       driver.send(spec);
     }
 ```
+
+
 ---
 Unless, specified otherwise, all parts code in all the branches in this repository is  subjected to [GNU AGPLV3 License](https://github.com/tckb/busylight_driver/blob/master/LICENSE)
