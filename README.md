@@ -1,17 +1,21 @@
 # Busylight Driver
 
+An unofficial driver for communicating with [Busylight](http://busylight.com/) devices. 
 
-An unofficial driver for communicating with Busylight devices. For more details related to the device, check out the official page here: http://busylight.com/
+The driver is expected to work with all devices which support v2.2 protocol, that includes --
+    
+    - Kuando Busylight UC Alpha
+    - Kuando Busylight UC Omega (tested)
+    - Kuando Busylight Combi
+  
+## How can you use it?
 
-Some of the other implemenations:
-
-* node
-   1. https://github.com/porsager/busylight
-         
-* python 
-   1. https://github.com/mccarthyryanc/busylight    
-   2. https://github.com/ericpulvino/pyBusylight
-
+ - [Busylight REST](https://github.com/tckb/busylight_rest) interface is a simple REST interface using this driver. 
+    A sample use-case is below -- 
+        
+       https://twitter.com/this_is_tckb/status/1171320757550485504
+       
+    ![](/media/shortcuts.gif)
 
 ## Build and Install
 You can install the package in your local maven repo as follows:
@@ -118,3 +122,13 @@ try (Driver driver = Driver.tryAndAcquire()) {
 
 ---
 Unless, specified otherwise, all parts code in all the branches in this repository is  subjected to [GNU AGPLV3 License](https://github.com/tckb/busylight_driver/blob/master/LICENSE)
+
+----
+Some of the other implementations:
+
+* node
+   1. https://github.com/porsager/busylight
+         
+* python 
+   1. https://github.com/mccarthyryanc/busylight    
+   2. https://github.com/ericpulvino/pyBusylight
