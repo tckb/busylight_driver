@@ -10,7 +10,7 @@ The driver is expected to work with all devices which support v2.2 protocol, tha
   
 ## How can you use it?
 
- - [Busylight REST](https://github.com/tckb/busylight_rest) interface is a simple REST interface using this driver. 
+ - [Busylight REST](https://github.com/tckb/busylight_rest) is a simple REST interface written that uses this driver. 
     A sample use-case is below -- 
         
        https://twitter.com/this_is_tckb/status/1171320757550485504
